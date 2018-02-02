@@ -1,0 +1,63 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* stylelint-disable*/
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* stylelint-enable */
+
+html {
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background: #c1bdba;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+#box {
+  display: flex;
+  width: 40%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  background-color: #80bfff;
+  padding: 2.222em; /* 40 / 18 = 2.22222222223 */
+  max-width: 33.333; /* 600 / 18 = 33.3333333336 */
+  margin: 2.222em; /* 40 / 18 = 2.2222222223 */
+  border-radius: 0.222em; /* 4 / 18 = 0.22222222223 */
+}
+
+h1 {
+  padding-top: 0.555em; /* 10 / 18 = 0.555555556 */
+  padding-bottom: 0.555em; /* 10 / 18 = 0.555555556 */
+  font-size: 2.222em;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 300;
+  margin: 2.222em; /* 40 / 18 = 2.2222222223 */
+  background: #1ab188;
+}
+
+h2{
+  text-align: center;
+  color: #ffffff;
+  font-weight: 250;
+  margin: 2.222em; /* 40 / 18 = 2.2222222223 */
+}
+
+label {
+  color: #ffffff;
+  padding: 0.555em; /* 10 / 18 = 0.555555556 */
+}
+
+.submit {
+  display:block;
+  width:100%;
+  border:0;
+  border-radius: 0.111em; /* 2 / 18 = 0.1111111111 */
+  font-size:2em; /* 36 / 18 = 2 */
+  font-weight:$bold;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+}

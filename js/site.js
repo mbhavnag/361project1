@@ -9,6 +9,17 @@ $('.box').find('input, textarea').on('keyup blur focus', function(e){
       } else {
         label.addClass('active highlight');
       }
+    }else if (e.type === 'blur'){
+      if($this.val() === ''){
+        label.removeClass('active highlight');
+      } else {
+        label.removeClass('highlight');
+      }
+    }else if (e.type === 'focus'){
+      if($this.val() === ''){
+        label.removeClass('highlight');
+      }else if($this.val() !== ''){
+        label.addClass('highlight');
+      }
     }
 });
-$('body').replaceWith('<h1>Thank-You for your Sign Up'</h1>);
