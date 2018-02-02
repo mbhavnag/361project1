@@ -3,7 +3,7 @@ $('.box').find('input, textarea').on('keyup blur focus', function(e){
   var $this = $(this),
       label = $this.prev('label');
 
-    if (e.this === 'keyup') {
+    if (e.this === 'keyup'){
       if($this.val() === ''){
         label.removeClass('active highlight');
       } else {
@@ -11,3 +11,4 @@ $('.box').find('input, textarea').on('keyup blur focus', function(e){
       }
     }
 });
+$('body').replaceWith('<h1>Thank-You for your Sign Up'</h1>);
