@@ -22,7 +22,6 @@ body {
 #description{
   order: 1;
   font-size: 1.111em;
-  display: flex;
   width: 35%;
   float: left;
 }
@@ -30,21 +29,25 @@ body {
 #box {
   order: 2;
   font-size: 1.111em;
-  display: flex;
-  width: 35%;
+  width: 40%;
   float: right;
 }
 
 #box,
 #description {
-  flex-wrap: wrap;
   height: auto;
   align-items: center;
   justify-content: center;
   background-color: #80bfff;
   padding: 2.222em; /* 40 / 18 = 2.22222222223 */
-  margin: 5%;
+  margin: 2.5%;
   border-radius: 0.222em; /* 4 / 18 = 0.22222222223 */
+}
+
+#box,
+#description{
+  display: flex;
+  flex-flow: wrap row;
 }
 
 h1 {
