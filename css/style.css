@@ -21,15 +21,15 @@ body {
 
 #description{
   order: 1;
-  font-size: 1.111em;
-  width: 35%;
+  font-size: 1.388em;
+  width: 37%;
   float: left;
 }
 
 #box {
   order: 2;
   font-size: 1.111em;
-  width: 40%;
+  width: 37%;
   float: right;
 }
 
@@ -42,6 +42,7 @@ body {
   padding: 2.222em; /* 40 / 18 = 2.22222222223 */
   margin: 2.5%;
   border-radius: 0.222em; /* 4 / 18 = 0.22222222223 */
+  color: #ffffff;
 }
 
 #box,
@@ -51,6 +52,7 @@ body {
 }
 
 h1 {
+  margin: 1%;
   padding-top: 0.555em; /* 10 / 18 = 0.555555556 */
   padding-bottom: 0.555em; /* 10 / 18 = 0.555555556 */
   padding-right: 1.112em; /* 20/18 = 1.1111111111112 */
@@ -93,7 +95,6 @@ input {
 }
 
 .submit {
-  border-radius: 0.444em; /* 8/18 = 0.444444444em*/
   display:block;
   width:100%;
   border:0;
@@ -103,4 +104,58 @@ input {
   text-transform:uppercase;
   letter-spacing:.1em;
    -webkit-appearance: button;
+}
+
+@media screen and (max-width: 69.375em){
+  #description,
+  #box{
+    flex: 1 0 90%;
+    flex-flow: wrap column;
+    height: auto;
+    font-size: 1.222em;
+    width: auto;
+    float: none;
+    margin-left : 10%;
+    margin-right: 10%;
+  }
+}
+
+@media screen and (max-width: 27.8125em){
+  #description,
+  #box{
+    flex: 1 0 90%;
+    flex-flow: wrap column;
+    height: auto;
+    font-size: 1em;
+    width: auto;
+    float: none;
+    margin-left : 10%;
+    margin-right: 10%;
+  }
+  h1{
+    font-size: 1.222em;
+  }
+  h2{
+    font-size: 1.112em;
+  }
+  .submit{
+    font-size: 1.112em;
+  }
+  input,
+  label{
+    margin-bottom: 2.5%;
+    float: left;
+  }
+}
+
+@media screen and (min-width: 405px){
+  h1{
+    font-size: 1.222em;
+  }
+  h2{
+    font-size: 1em;
+  }
+  .submit{
+    font-size: 1em;
+  }
 }
