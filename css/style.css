@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  background: #c1bdba;
+  background: #b3ffe6;
   font-family: 'Titillium Web', sans-serif;
 }
 
@@ -38,7 +38,7 @@ body {
   height: auto;
   align-items: center;
   justify-content: center;
-  background-color: #80bfff;
+  background-color: #2c516d;
   padding: 2.222em; /* 40 / 18 = 2.22222222223 */
   margin: 2.5%;
   border-radius: 0.222em; /* 4 / 18 = 0.22222222223 */
@@ -148,7 +148,7 @@ input {
   }
 }
 
-@media screen and (min-width: 405px){
+@media screen and (max-width: 405px){
   h1{
     font-size: 1.222em;
   }
