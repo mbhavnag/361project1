@@ -15,9 +15,14 @@ body {
   font-family: 'Titillium Web', sans-serif;
 }
 
+#thanks {
+  display: none;
+}
+
 #box {
   display: flex;
   width: 40%;
+  float: right;
   height: auto;
   align-items: center;
   justify-content: center;
